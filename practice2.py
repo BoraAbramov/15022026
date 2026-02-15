@@ -56,23 +56,10 @@ print(random_nums)
 # 4: 1-time
 # 5: 1-time
 
-for item in sorted(random_nums):
-    while item != i:
-        i = item
+for item in sorted(set(random_nums)):
         print(f"the number {item} appears {random_nums.count(item)} times")
 
 print("-" * 50)
 
-_sederole = []
-_mispar = []
 
-for item in sorted(random_nums):
-    while item != i:
-        i = item
-    if random_nums.count(item) > len(random_nums):
-        _sederole.append(item)
-        _mispar.append(_oreh)
-    elif random_nums.count(item) < _oreh:
-        _sederole.insert(item)
-        _mispar.append(_oreh)
 
